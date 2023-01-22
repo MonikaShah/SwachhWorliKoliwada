@@ -114,6 +114,7 @@ gtag('config', 'UA-197940159-2');
                       <li><a class="dropdown-item" href="{% url 'trackform_det' %}">{% trans "DataManager-EntryForm" %}</a></li>
                       <li><a class="dropdown-item" href="{% url 'show' %}"class="nav-link text-white">{% trans "View Daily Entry Data" %}</a></li>
                       <li><a class="dropdown-item" href="https://ee.humanitarianresponse.info/x/Y3Ji0ej7" class="nav-link text-white">{% trans "OneTimeSurvey Form" %}</a></li>
+                      <li><a href="{% url 'uploadimage' %}" class="waves-effect">{% trans "Upload Image of DailyCollection" %}</a></li>
                     </ul>
                 </li>
                 
@@ -149,7 +150,7 @@ gtag('config', 'UA-197940159-2');
                       <li><a class="dropdown-item" href="{% url 'trackform' %}"class="nav-link text-white">{% trans "Daily Entry Form" %}</a></li>
                       <li><a class="dropdown-item" href="{% url 'show' %}"class="nav-link text-white">{% trans "View Daily Entry Data" %}</a></li>
                       <li><a class="dropdown-item" href="https://ee.humanitarianresponse.info/x/Y3Ji0ej7" class="nav-link text-white">{% trans "OneTimeSurvey Form" %}</a></li>
-                      <li><a href="{% url 'uploadimage' %}" class="waves-effect">Upload Image</a></li>
+                      <li><a href="{% url 'uploadimage' %}" class="waves-effect">{% trans "Upload Image of DailyCollection" %}</a></li>
                     </ul>
                 </li>
                    
@@ -209,7 +210,7 @@ gtag('config', 'UA-197940159-2');
             <!-- hitwebcounter Code START -->
 <!-- <a href="https://www.hitwebcounter.com" target="_blank">
     <img src="https://hitwebcounter.com/counter/counter.php?page=7818435&style=0001&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>    -->
-    <h5 class="nav-item text-white" style ="float: right;line-height: 2.0;"> &nbsp;&nbsp;Visitors Count : {{ Visitor_count }} </h5>
+    <h5 class="nav-item text-white" style ="float: right;line-height: 2.0;"> &nbsp;&nbsp; {% trans "Visitors Count" %} : {{ Visitor_count }} </h5>
         </ul>
         
         </nav>
