@@ -144,7 +144,7 @@ const createLabel = (oldArr,maxVal) =>{
 }
 
 export const calcDailyData = (selLanedata,selCategory) =>{
-    const colName = {'dry':'drywaste_af','wet':'wetwaste_af','rejected':'rejected'};
+    const colName = {'dry':'drywaste_af','wet':'wetwaste_af','rejected':'rejected', 'total':'total'};
     const catData = _.map(selLanedata,colName[selCategory])
     const date = _.map(selLanedata,'date')
     const MAXVAL = 15;
